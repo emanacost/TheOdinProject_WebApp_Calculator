@@ -1,3 +1,10 @@
 body {
     background-color: #FFE85E;
-};
+}
+
+#calculator {
+    width: 250px;
+    height: 400px;
+    border: #5E74FF solid 5px;
+    border-radius: 10%;
+}
