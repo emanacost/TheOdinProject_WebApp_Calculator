@@ -33,3 +33,22 @@ body {
     background-color: #FF5E74;
     color: #214e48;
 }
+
+#calc-buttons-container {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+#calc-numb-container {
+    width: 75%;
+    height: 58%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.calc-numb-button {
+    width: 40px;
+    height: 40px;
+}
