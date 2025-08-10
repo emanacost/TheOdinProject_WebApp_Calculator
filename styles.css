@@ -21,3 +21,15 @@ body {
     margin-top: 76px;
     border: #5E74FF solid 2px;
 }
+
+#calc-clear {
+    gap: 1em;
+    border: #5E74FF solid 3px;
+    border-radius: 5%;
+    width: 25%;
+    margin-top: 1em;
+    margin-left: 5px;
+    text-align: center;
+    background-color: #FF5E74;
+    color: #214e48;
+}
