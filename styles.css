@@ -34,10 +34,19 @@ body {
     color: #214e48;
 }
 
+#calc-clear:hover {
+    background-color: #d44f61;
+}
+
+#calc-clear:active {
+    background-color: #85313d;
+}
+
 #calc-buttons-container {
     display: flex;
     margin-top: 50px;
     margin-left: 10px;
+    gap: 1em;
 }
 
 #calc-numb-container {
@@ -51,4 +60,37 @@ body {
 .calc-numb-button {
     width: 40px;
     height: 40px;
+    background-color: rgb(250, 234, 228);
+    border: #5E74FF 1px solid;
+}
+
+.calc-numb-button:hover {
+    background-color: rgb(204, 191, 186);
+}
+
+.calc-numb-button:active {
+    background-color: rgb(143, 133, 130);
+}
+
+#calc-operators-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    align-content: space-between;
+}
+
+.calc-operator-button {
+    width: 40px;
+    height: 30px;
+    gap: 1em;
+    background-color: rgb(250, 234, 228);
+    border: #5E74FF 1px solid;
+}
+
+.calc-operator-button:hover {
+    background-color: rgb(204, 191, 186);
+}
+
+.calc-operator-button:active {
+    background-color: rgb(143, 133, 130);
 }
