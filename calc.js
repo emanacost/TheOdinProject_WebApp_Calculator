@@ -30,9 +30,9 @@ function operate(a, operand, b) {
         return add(a, b);
     } else if ( operand == '-' ) {
         return subtract(a, b);
-    } else if ( operand == '*' ) {
+    } else if ( operand == 'x' ) {
         return multiply(a, b);
-    } else if ( operand == '/' ) {
+    } else if ( operand == '÷' ) {
         return divide(a, b);
     } 
 };
