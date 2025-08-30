@@ -75,7 +75,7 @@ let equalButton = document.querySelector(".calc-equal-button");
 equalButton.onclick = () => {
     secondNumber = calcDisplay.textContent;
     let result = operate(Number(firstNumber), operator, Number(secondNumber));
-    calcDisplay.textContent = result;
+    calcDisplay.textContent = result.toFixed(2);
     firstNumber = '';
     secondNumber = '';
     operator = '';
