@@ -76,4 +76,7 @@ equalButton.onclick = () => {
     secondNumber = calcDisplay.textContent;
     let result = operate(Number(firstNumber), operator, Number(secondNumber));
     calcDisplay.textContent = result;
+    firstNumber = '';
+    secondNumber = '';
+    operator = '';
 };
