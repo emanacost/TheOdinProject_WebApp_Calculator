@@ -56,3 +56,24 @@ let clearButton = document.querySelector("#calc-clear");
 clearButton.onclick = () => {
     calcDisplay.textContent = '';
 };
+
+// Operation logic
+let firstNumber = '';
+let secondNumber = '';
+let operator = '';
+
+let operandButton = document.querySelectorAll(".calc-operator-button");
+operandButton.forEach(button => {
+    button.onclick = () => {
+        operator = button.textContent;
+        firstNumber = calcDisplay.textContent;
+        calcDisplay.textContent = '';
+    };
+});
+
+let equalButton = document.querySelector(".calc-equal-button");
+equalButton.onclick = () => {
+    secondNumber = calcDisplay.textContent;
+    let result = operate(Number(firstNumber), operator, Number(secondNumber));
+    calcDisplay.textContent = result;
+};
