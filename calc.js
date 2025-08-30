@@ -50,3 +50,9 @@ numbButton.forEach(button => {
         calcDisplay.textContent += button.textContent;
     };
 });
+
+// Add clear button functionality
+let clearButton = document.querySelector("#calc-clear");
+clearButton.onclick = () => {
+    calcDisplay.textContent = '';
+};
