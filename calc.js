@@ -36,3 +36,17 @@ function operate(a, operand, b) {
         return divide(a, b);
     } 
 };
+
+
+// Function to populate the display screen of the screen
+// when the numbers are pressed
+
+let calcDisplay = document.querySelector("#calc-display");
+
+let numbButton = document.querySelectorAll(".calc-numb-button");
+
+numbButton.forEach(button => {
+    button.onclick = () => {
+        calcDisplay.textContent += button.textContent;
+    };
+});

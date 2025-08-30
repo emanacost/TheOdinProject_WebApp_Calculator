@@ -15,10 +15,20 @@ body {
     background-color: white;
 }
 
+#calc-display-container {
+    display: flex;
+    justify-content: end;
+    margin-top: 65px;
+    height: 36px;
+}
+
+#calc-display {
+    font-size: 30px;
+}
+
 #calc-head {
     width: auto;
     height: 0px;
-    margin-top: 76px;
     border: #5E74FF solid 2px;
 }
 
