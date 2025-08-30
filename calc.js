@@ -16,8 +16,8 @@ function multiply(a, b  = 1) {
 
 function divide(a, b) {
     if (b == 0) { 
-        return console.log("Can't divide by zero")
-    };
+        return "Can't divide by zero";
+    }
     return a / b;
 };
 
