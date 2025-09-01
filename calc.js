@@ -47,7 +47,12 @@ let numbButton = document.querySelectorAll(".calc-numb-button");
 
 numbButton.forEach(button => {
     button.onclick = () => {
-        calcDisplay.textContent += button.textContent;
+        if ( typeof(result) === 'number') {
+            calcDisplay.textContent = '';
+            calcDisplay.textContent += button.textContent;
+        } else {
+            calcDisplay.textContent += button.textContent;
+        }
     };
 });
 
@@ -64,6 +69,7 @@ clearButton.onclick = () => {
 let firstNumber = '';
 let secondNumber = '';
 let operator = '';
+let result = '';
 
 let operandButton = document.querySelectorAll(".calc-operator-button");
 operandButton.forEach(button => {
@@ -74,11 +80,11 @@ operandButton.forEach(button => {
             calcDisplay.textContent = '';
         } else {
             secondNumber = calcDisplay.textContent;
-            let result = operate(Number(firstNumber), operator, Number(secondNumber));
+            result = operate(Number(firstNumber), operator, Number(secondNumber));
             calcDisplay.textContent = result.toFixed(2);
-            firstNumber = '';
+            firstNumber = result.toFixed(2);
             secondNumber = '';
-            operator = '';
+            operator = button.textContent;
         }
     };
 });
@@ -86,7 +92,7 @@ operandButton.forEach(button => {
 let equalButton = document.querySelector(".calc-equal-button");
 equalButton.onclick = () => {
     secondNumber = calcDisplay.textContent;
-    let result = operate(Number(firstNumber), operator, Number(secondNumber));
+    result = operate(Number(firstNumber), operator, Number(secondNumber));
     calcDisplay.textContent = result.toFixed(2);
     firstNumber = '';
     secondNumber = '';
