@@ -65,9 +65,18 @@ let operator = '';
 let operandButton = document.querySelectorAll(".calc-operator-button");
 operandButton.forEach(button => {
     button.onclick = () => {
-        operator = button.textContent;
-        firstNumber = calcDisplay.textContent;
-        calcDisplay.textContent = '';
+        if ( firstNumber === '') {
+            operator = button.textContent;
+            firstNumber = calcDisplay.textContent;
+            calcDisplay.textContent = '';
+        } else {
+            secondNumber = calcDisplay.textContent;
+            let result = operate(Number(firstNumber), operator, Number(secondNumber));
+            calcDisplay.textContent = result.toFixed(2);
+            firstNumber = '';
+            secondNumber = '';
+            operator = '';
+        }
     };
 });
 
