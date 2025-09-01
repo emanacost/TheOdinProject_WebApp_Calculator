@@ -113,3 +113,11 @@ body {
 .calc-operator-button:active {
     background-color: rgb(143, 133, 130);
 }
+
+.calc-equal-button:hover {
+    background-color: rgb(204, 191, 186);
+}
+
+.calc-equal-button:active {
+    background-color: rgb(143, 133, 130);
+}
