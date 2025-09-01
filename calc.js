@@ -55,6 +55,9 @@ numbButton.forEach(button => {
 let clearButton = document.querySelector("#calc-clear");
 clearButton.onclick = () => {
     calcDisplay.textContent = '';
+    firstNumber = '';
+    secondNumber = '';
+    operator = '';
 };
 
 // Operation logic
