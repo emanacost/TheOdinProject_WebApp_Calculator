@@ -49,6 +49,7 @@ numbButton.forEach(button => {
     button.onclick = () => {
         if ( typeof(result) === 'number') {
             calcDisplay.textContent = '';
+            result = '';
             calcDisplay.textContent += button.textContent;
         } else {
             calcDisplay.textContent += button.textContent;
