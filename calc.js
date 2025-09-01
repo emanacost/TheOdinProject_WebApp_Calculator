@@ -63,6 +63,7 @@ clearButton.onclick = () => {
     firstNumber = '';
     secondNumber = '';
     operator = '';
+    result = '';
 };
 
 // Operation logic
